@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container-fluid description">
+    <!-- Timeblocks go here -->
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>9:00 AM</h2>
+      </div>
+      <input type="text" id="nineAm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>10:00 AM</h2>
+      </div>
+      <input type="text" id="tenAm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>11:00 AM</h2>
+      </div>
+      <input type="text" id="eleAm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>12:00 PM</h2>
+      </div>
+      <input type="text" id="noon" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>1:00 PM</h2>
+      </div>
+      <input type="text" id="onePm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>2:00 PM</h2>
+      </div>
+      <input type="text" id="twoPm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>3:00 PM</h2>
+      </div>
+      <input type="text" id="threePm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>4:00 PM</h2>
+      </div>
+      <input type="text" id="fourPm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+
+    <div class="row hour">
+      <div class="col time-block">
+        <h2>5:00 PM</h2>
+      </div>
+      <input type="text" id="fivePm" class="col-6 bg-secondary event-input">
+      <button class="col saveBtn"><i class="fas fa-save"></i></button>
+    </div>
+  </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
