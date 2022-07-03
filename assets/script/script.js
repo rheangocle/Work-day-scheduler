@@ -16,15 +16,12 @@ THEN the saved events persist
 $(document).ready(function () {
 
   //Declare variables
-
-  var currentDateEl = $('#currentDay');
   var saveBtn = $('.saveBtn');
-  var textInput = $('.event-input')
-
 
 
   //Handle time display on jumbotron
   function displayTime() {
+    var currentDateEl = $('#currentDay');
     var currentDate = moment().format('dddd, MMM Do');
     currentDateEl.text(currentDate);
   }
@@ -35,9 +32,19 @@ $(document).ready(function () {
 
   }
 
-  saveBtn.on('click', function() {
-    var 
+  //Saves text entry to local storage
+  saveBtn.click(function() {
+    var textInput = $(this).prev().val();
+    console.log(textInput)
+    var time = $(this).siblings('.time-block').text().trim();
+    console.log(time);
+
+    localStorage.setItem(time, textInput);
   })
+
+
+
+
 
 
 })
