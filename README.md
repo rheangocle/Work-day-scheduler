@@ -1,20 +1,14 @@
 # Work-day-scheduler
 
 ## Summary
-Daily event calendar using Bootstap, JQuery, and third-party APIs.
+Daily event calendar created using Bootstap, JQuery, and moment.
 The deployed application can be viewed [HERE]().
 
+## Criteria
+When the planner is first opened, the current date is displayed at the top of the page. The planner will display time-blocks from 9AM to 5PM, the standard business hours. The user can click into each time block to edit and save their agenda for the day. Clicking the save button for each time block will save the event in the local storage that will remain on the page even if the user refreshes the page. In addition, the time blocks will be color coded to indicate the past (gray), present(red), or future (green).
 
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+## Web Application View
+Beneath is a screenshot of the web application's appearance. 
+
+![Work day planner](./assets/Images/Capture.PNG)
+
