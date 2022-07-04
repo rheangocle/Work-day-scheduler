@@ -8,6 +8,7 @@ $(document).ready(function () {
 
   //Changing row color depending on time
   function timeColor() {
+
     //Create variable for current time
     var now = moment().hour()
     //console.log(now)
@@ -19,8 +20,6 @@ $(document).ready(function () {
         $(this).siblings('input').addClass('bg-danger');
         $(this).siblings('input').removeClass('bg-success');
         $(this).siblings('input').removeClass('bg-secondary');
-
-        //need to change  $(this).addClass('bg-success'); to $(this).siblings('input').addClass('bg-success');
       } else if (parseInt(textEntryEl) < now) {
         $(this).siblings('input').addClass('bg-secondary');
         $(this).siblings('input').removeClass('bg-success');
@@ -39,14 +38,13 @@ $(document).ready(function () {
         $(this).siblings('input').addClass('bg-danger');
         $(this).siblings('input').removeClass('bg-success');
         $(this).siblings('input').removeClass('bg-secondary');
-        //need to change  $(this).addClass('bg-success'); to $(this).siblings('input').addClass('bg-success');
       } else if (textEntryEl > now) {
         $(this).siblings('input').addClass('bg-success');
         $(this).siblings('input').removeClass('bg-secondary');
         $(this).siblings('input').removeClass('bg-danger');
       } else {
-        $(this).siblings('input').addClass('bg-success');
-        $(this).siblings('input').removeClass('bg-secondary');
+        $(this).siblings('input').addClass('bg-secondary');
+        $(this).siblings('input').removeClass('bg-success');
         $(this).siblings('input').removeClass('bg-danger');
       }
     })
