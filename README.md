@@ -1,5 +1,8 @@
 # Work-day-scheduler
+
+## Summary
 Daily event calendar using Bootstap, JQuery, and third-party APIs.
+The deployed application can be viewed [HERE]().
 
 
 GIVEN I am using a daily planner to create a schedule
